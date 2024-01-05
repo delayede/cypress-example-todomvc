@@ -104,3 +104,9 @@ Cypress.Commands.add('addAxeCode', () => {
     })
   })
 })
+
+
+
+Cypress.Commands.add('getTodoInput', () => {
+  return cy.get('input.new-todo');
+});
