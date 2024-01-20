@@ -58,11 +58,29 @@ Cypress.Commands.add('createDefaultTodos', function () {
   return cy.get('.todo-list li', { log: false })
 })
 
+
+//Test
+// Cypress.Commands.add('getTextValueOfTodo', function () {
+
+//   let cmd = Cypress.log({
+//     name: 'getTextValueOfTodo',
+//     message: []
+//   })
+
+
+
+// return cy.get('.view > label' , { log: false }).eq(1).invoke('text' , { log: false })
+
+// })
+//test
+
+
+
 Cypress.Commands.add('createTodo', function (todo) {
 
   let cmd = Cypress.log({
     name: 'create todo',
-    message: todo,
+    message: [todo],
     consoleProps () {
       return {
         'Inserted Todo': todo,
